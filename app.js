@@ -77,7 +77,16 @@ $(document).ready(function() {
   // Play all songs in the playlist when the "play" button is clicked.
   $('#play-button').on('click', playAll);
 
+  // Add your code here...
 
-  // Add Your Code Here.
+  var trash_icon = $('#library-list .fa-trash');
+
+  // Removes a library item after 500 ms
+  $('#library-list .fa-trash').on('click', function() {
+    $(this).parent().slideUp(500, function() {
+      console.log('lol');
+      $(this).remove(); 
+    });
+  });
 
 });
