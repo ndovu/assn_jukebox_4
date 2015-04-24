@@ -82,7 +82,7 @@ $(document).ready(function() {
   var trash_icon = $('#library-list .fa-trash');
 
   // Removes a library item after 500 ms
-  $('#library-list .fa-trash').on('click', function() {
+  trash_icon.on('click', function() {
     $(this).parent().slideUp(500, function() {
       console.log('lol');
       $(this).remove(); 
