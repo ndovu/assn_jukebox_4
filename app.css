@@ -42,6 +42,10 @@ li .fa-trash:hover {
   opacity: 1;
 }
 
+#library-list li:hover {
+  background-color: #363636;
+}
+
 li .notes {
   margin-left: 22px;
   margin-top: 10px;
