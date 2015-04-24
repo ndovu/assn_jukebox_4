@@ -78,8 +78,24 @@ $(document).ready(function() {
   $('#play-button').on('click', playAll);
 
   // Add your code here...
-
   var trash_icon = $('#library-list .fa-trash');
+  var library_song = $('#library-list li');
+  var message = $('#message');
+
+  // var timer3800 = function() {
+  //   setTimeout(fn, 3800);
+  // }
+
+  // message.toggle(800, setTimeout(function() {
+  //   console.log('message finished toggle')
+  //   //message.toggle(800);
+  // },3800));
+
+  message.toggle(800, function() {
+    setTimeout( function() {
+      message.toggle(800);
+    }, 3800);
+  });
 
   // Removes a library item after 500 ms
   trash_icon.on('click', function() {
@@ -87,6 +103,12 @@ $(document).ready(function() {
       console.log('lol');
       $(this).remove(); 
     });
+  });
+
+  // 
+  library_song.on('dblclick', function() {
+    console.log('library song clicked!');
+    $(this).children(".notes").toggle(300);
   });
 
 });
