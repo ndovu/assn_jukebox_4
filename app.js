@@ -82,15 +82,7 @@ $(document).ready(function() {
   var library_song = $('#library-list li');
   var message = $('#message');
 
-  // var timer3800 = function() {
-  //   setTimeout(fn, 3800);
-  // }
-
-  // message.toggle(800, setTimeout(function() {
-  //   console.log('message finished toggle')
-  //   //message.toggle(800);
-  // },3800));
-
+  // Fades the message in and out upon page load
   message.toggle(800, function() {
     setTimeout( function() {
       message.toggle(800);

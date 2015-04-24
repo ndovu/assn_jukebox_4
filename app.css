@@ -35,6 +35,11 @@ li .fa-trash {
   cursor: pointer;
   position: relative;
   top: 2px;
+  opacity: 0.3;
+}
+
+li .fa-trash:hover {
+  opacity: 1;
 }
 
 li .notes {
